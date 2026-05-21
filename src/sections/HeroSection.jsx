@@ -17,7 +17,7 @@ export default function HeroSection() {
           <p className="hero-subtitle">{DEVELOPER.role}</p>
           <p className="hero-desc">
             Desenvolvedor apaixonado por criar experiências web modernas e
-            intuitivas. Especializado em React, TypeScript e interfaces que
+            intuitivas. Especializado em React, e interfaces que
             fazem a diferença.
           </p>
 
