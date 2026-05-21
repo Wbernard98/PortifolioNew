@@ -51,6 +51,7 @@ body {
         opacity: 0;
         transform: translateY(28px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -58,18 +59,24 @@ body {
 }
 
 @keyframes pulse-slow {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0.4;
     }
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-14px);
     }
@@ -344,11 +351,27 @@ body {
     font-size: 1.2rem;
     text-decoration: none;
     transition: all 0.2s;
+
+
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .social-icon-btn:hover {
+
     background: rgba(124, 58, 237, 0.2);
     border-color: rgba(139, 91, 221, 0.5);
+
+
+    color: rgb(167, 139, 250);
+    transform: translateY(-2px);
+}
+
+
+.social-icon-btn .icon-svg {
+    display: block;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
 }
 
 .scroll-indicator {
@@ -445,11 +468,12 @@ body {
     transition: all 0.3s ease;
     position: relative;
 }
+
 .about-feature-card:hover {
     border-color: var(--card-theme);
-    background: rgba(255, 255, 255, 0.05); 
+    background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 24px -10px var(--card-theme);
-    transform: translateY(-2px); 
+    transform: translateY(-2px);
 }
 
 .feature-icon-wrapper {
@@ -460,10 +484,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.03); 
+    background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
 }
+
 .about-feature-card:hover .feature-icon-wrapper {
     border-color: var(--card-theme);
     background: rgba(255, 255, 255, 0.08);
@@ -474,6 +499,7 @@ body {
     height: 24px;
     object-fit: contain;
 }
+
 .feature-title {
     font-weight: 700;
     margin-bottom: 0.3rem;
@@ -491,6 +517,7 @@ body {
     font-size: 0.83rem;
     line-height: 1.55;
 }
+
 /* Grids */
 .skills-grid {
     display: grid;
@@ -820,7 +847,7 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    text-decoration: none; 
+    text-decoration: none;
     color: inherit;
     transition: all 0.2s;
 }
@@ -850,7 +877,7 @@ body {
 
 @media (max-width: 768px) {
     .portfolio-section {
-        padding: 4rem 1rem; 
+        padding: 4rem 1rem;
     }
 
     .projects-grid,
@@ -880,7 +907,7 @@ body {
         display: none;
     }
 
-    
+
     .project-actions {
         flex-direction: column;
         gap: 0.5rem;
@@ -891,7 +918,7 @@ body {
         width: 100%;
     }
 
-    
+
     .footer {
         padding: 3rem 1rem 2rem;
     }
@@ -934,11 +961,11 @@ body {
         padding: 3.5rem 1rem;
     }
 
-   
+
     .skills-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
-    
+
     .contact-box-footer,
     .project-info,
     .contact-card-link,
