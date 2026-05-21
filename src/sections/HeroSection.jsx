@@ -1,6 +1,6 @@
 import React from "react";
 import { DEVELOPER, scrollTo } from "../data/developerData";
-import CodeCard from "../components/CodeCard";
+import CodeCard from "../components/codeCard";
 
 export default function HeroSection() {
   return (
